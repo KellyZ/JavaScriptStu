@@ -30,11 +30,18 @@ WebIDL定义了ECMAScript和DOM技术之间的交互规范。
 	//
 
 数据类型：
-	Boolean: var myVariable=true;
-	Number: var myVariable=10;
-	String: var myVariable="test";
-	Object: var myVariable=document.querySelector('h1');
-	Array: var myVariable=[1,'Bob','Steve',10];
+	Number（数字）
+	String（字符串）
+	Boolean（布尔）
+	Symbol（符号）（第六版新增）
+	Object（对象）
+		Function（函数）
+		Array（数组）
+		Date（日期）
+		RegExp（正则表达式）
+		Error
+	Null（空）
+	Undefined（未定义）
 
 运算符：
 	+、-、*、/
