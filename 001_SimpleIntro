@@ -1,0 +1,52 @@
+https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics:
+
+提示：我们将 <script> 元素放在 HTML 文件底部的原因是，浏览器解析 HTML 似乎按照代码出现的顺序来的。如果 JavaScript被首先读取，它也应该影响下面的 HTML，但有时会出现问题，因为 JavaScript 会在 HTML 之前被加载，如果 JavaScript 代码出现问题则 HTML 不会被加载。所以将 JavaScript 代码放在底部是最好的选择。
+
+
+如果从浏览器的范畴去理解“JavaScript”这个术语，它包含了截然不同的两个方面。一个是JavaScript的核心语言（ECMAScript），另一个是DOM（文档对象模型）。
+JavaScript的核心语言可以被用在非浏览器环境中，例如 node.js
+
+ECMAScript 定义了：
+	语法（解析规则，关键字，流程控制，对象初始化等）
+	错误处理机制（throw， try/catch 以及用户自定义错误类型的能力）
+	类型（布尔值，数字，字符串，函数，对象等）
+	全局对象。在浏览器环境中，window就是全局对象，这个对象拥有很多函数（parseInt， parseFloat， decodeURI， encodeURI等）
+	基于原型的继承机制
+	内置对象和函数（JSON，Math，Array.prototype 方法，Object introspection 方法等）
+	严格模式
+
+文档对象模型（DOM）是用来表达HTML，XHTML及XML文档中的对象或与其进行交互的约定，它是跨平台的，并且与编程语言无关。
+通过调用DOM树上对象的方法可以操纵这些对象。文档对象模型核心是由W3C进行标准化的，它将HTML和XML文档抽象成对象，
+并在其上定义接口以及操纵这些对象的机制，这些定义都是与编程语言无关的。
+    DOM核心中定义了文档结构，树模型，以及DOM事件架构，包括：Node， Element， DocumentFragment， Document， DOMImplementation， Event， EventTarget等。
+    DOM事件中包括DOM事件架构不太严格的定义以及一些特殊事件。
+    DOM 元素遍历 以及 DOM Range 对象等其它内容
+	
+WebIDL定义了ECMAScript和DOM技术之间的交互规范。
+
+
+注释：
+	/*   */
+	//
+
+数据类型：
+	Boolean: var myVariable=true;
+	Number: var myVariable=10;
+	String: var myVariable="test";
+	Object: var myVariable=document.querySelector('h1');
+	Array: var myVariable=[1,'Bob','Steve',10];
+
+运算符：
+	+、-、*、/
+	相等：===
+	非，不等：!==
+
+条件，循环：
+	if{	}else{ }
+
+函数：
+
+
+
+JavaScript标准库全局对象：
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
